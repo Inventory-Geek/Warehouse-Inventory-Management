@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Web page CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico"/>
@@ -16,70 +18,28 @@
     
   </head>
   <body>
-    <!-- Navbar -->
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <h1>
-            <span class="checklist">&#128203;</span>
-            <span class="Inventory">Inventory</span><span class="Check">Check</span>
-          </h1>
-        </a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Product List</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Requests</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Login</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-      </nav>
 
-    <!-- Menu -->
-    
+     <!-- Menu -->
+    {% include 'Header.html' %}
     
 
-    <!-- Bars -->
-
-    <!-- Hero section -->
-
-    <!-- About section -->
-
-    <!-- Lightbox image gallery -->
-
-    <!-- Jab TV Stakeholders -->
-
-    <!-- Email subscription -->
-
-    <!-- Social icons -->
-
-    <!-- Scroll to top button -->
+    <div id="page-container">
+       <div id="content-wrap">
+         <!-- all other page content -->
+         {% include 'Feature.html' %}
+       </div>
+      <!-- Footer -->
+       <footer id="footer">
+         {% include 'Footer.html' %}
+       </footer>
+     </div>
+    
 
     <!-- Web page script -->
-    <script src="/js/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <!-- Ion icons CDN -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+   
 
-    <!-- Simple lightbox -->
-    <script src="/js/simple-lightbox.min.js"></script>
-    <script>
-      // Simple lightbox initializer
-    </script>
   </body>
 </html>  
     
